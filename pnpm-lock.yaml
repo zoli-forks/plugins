@@ -377,9 +377,9 @@ importers:
       typescript: ^3.7.2
   packages/url:
     dependencies:
+      '@rollup/pluginutils': 3.0.2_rollup@1.27.14
       make-dir: 3.0.0
       mime: 2.4.4
-      rollup-pluginutils: 2.8.2
     devDependencies:
       '@babel/core': 7.7.7
       '@babel/preset-env': 7.7.7_@babel+core@7.7.7
@@ -389,16 +389,16 @@ importers:
       rollup: 1.27.14
       rollup-plugin-babel: 4.3.3_@babel+core@7.7.7+rollup@1.27.14
     specifiers:
-      '@babel/core': ^7.7.4
-      '@babel/preset-env': ^7.7.4
-      '@babel/register': ^7.7.4
+      '@babel/core': ^7.7.7
+      '@babel/preset-env': ^7.7.7
+      '@babel/register': ^7.7.7
+      '@rollup/pluginutils': ^3.0.2
       del: ^5.1.0
       globby: ^10.0.1
       make-dir: ^3.0.0
       mime: ^2.4.4
-      rollup: ^1.27.4
+      rollup: ^1.27.14
       rollup-plugin-babel: ^4.3.3
-      rollup-pluginutils: ^2.8.2
   packages/virtual:
     devDependencies:
       rollup: 1.27.14
@@ -1309,6 +1309,17 @@ packages:
       rollup: ^1.20.0
     resolution:
       integrity: sha512-PmNurkecagFimv7ZdKCVOfQuqKDPkrcpLFxRBcQ00LYr4HAjJwhCFxBiY2Xoletll2htTIiXBg6g0Yg21h2M3w==
+  /@rollup/pluginutils/3.0.2_rollup@1.27.14:
+    dependencies:
+      estree-walker: 0.6.1
+      rollup: 1.27.14
+    dev: false
+    engines:
+      node: '>= 8.0.0'
+    peerDependencies:
+      rollup: ^1.20.0
+    resolution:
+      integrity: sha512-OOpWfnOaveki8sI5MEY20jCxVuKTPpIYRGa5dkN3RwEHX6LZM3HwAsT4yalds5CZAGzkCnbnOUz8rxXIyTm2yQ==
   /@samverschueren/stream-to-observable/0.3.0:
     dependencies:
       any-observable: 0.3.0
