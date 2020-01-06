@@ -55,10 +55,12 @@ export default function url(options = {}) {
           const outputFileName = fileName
             .replace(/\[hash\]/g, hash)
             .replace(/\[extname\]/g, ext)
-            .replace(/\[dirname\]/g, `${relativeDir}/`)
+            .replace(/\[dirname\]/g, `${relativeDir}${path.sep}`)
             .replace(/\[name\]/g, name);
           data = `${publicPath}${outputFileName}`;
           copies[id] = outputFileName;
+          console.log('publicPath', publicPath);
+          console.log('outputFileName', outputFileName);
         } else {
           const mimetype = mime.getType(id);
           const isSVG = mimetype === 'image/svg+xml';

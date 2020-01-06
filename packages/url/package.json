@@ -55,7 +55,8 @@
     "del": "^5.1.0",
     "globby": "^10.0.1",
     "rollup": "^1.27.14",
-    "rollup-plugin-babel": "^4.3.3"
+    "rollup-plugin-babel": "^4.3.3",
+    "unixify": "^1.0.0"
   },
   "ava": {
     "files": [
