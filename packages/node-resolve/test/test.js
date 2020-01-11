@@ -3,7 +3,7 @@ const { join, resolve } = require('path');
 const test = require('ava');
 const { rollup } = require('rollup');
 const babel = require('rollup-plugin-babel');
-const commonjs = require('rollup-plugin-commonjs');
+const commonjs = require('@rollup/plugin-commonjs');
 
 const { getCode, getImports, testBundle } = require('../../../util/test');
 
