@@ -50,15 +50,15 @@
     "estree-walker": "^0.6.1"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "@rollup/plugin-typescript": "^2.1.0",
     "@types/estree": "0.0.39",
-    "@types/jest": "^24.0.23",
+    "@types/jest": "^24.0.25",
     "@types/micromatch": "^3.1.1",
-    "@types/node": "^12.12.11",
+    "@types/node": "^12.12.22",
     "micromatch": "^4.0.2",
     "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-typescript": "^1.0.1",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.4"
   },
   "ava": {
     "compileEnhancements": false,
