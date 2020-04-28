@@ -8,13 +8,13 @@ aliases:
       fi
   - &install_pnpm
     name: Install pnpm
-    command: npm install pnpm@^4.0.0 -g
+    command: npm install pnpm@next -g
   - &install_yarn
     name: Install yarn
     command: npm install yarn -g
   - &pnpm_install
     name: Install Dependencies
-    command: pnpm install --ignore-scripts
+    command: pnpm install --ignore-scripts --reporter ndjson
   - &restore_cache
     key: dependency-cache-{{ checksum "pnpm-lock.yaml" }}
 
